@@ -97,7 +97,7 @@ export function AppSidebar() {
       </SidebarHeader>
 
       {/* CONTENIDO */}
-      <SidebarContent className="space-y-0 bg-white dark:bg-neutral-900">
+      <SidebarContent className="bg-white dark:bg-neutral-900">
         {menu.map((section) => (
           <SidebarGroup key={section.title}>
             <Collapsible className="group/collapsible">
@@ -112,12 +112,12 @@ export function AppSidebar() {
 
                 {/* SUBITEMS */}
                 <CollapsibleContent>
-                  <SidebarMenuSub>
+                  <SidebarMenuSub className="border-b rounded-l rounded-2xl">
                     {section.items.map((item) => (
                       <SidebarMenuSubItem key={item.title}>
                         <Link
                           href={item.url}
-                          className="flex items-center gap-2 px-3 py-1.5 rounded-md text-sm hover:bg-gray-100 dark:hover:bg-neutral-800 focus:bg-gray-100 dark:focus:bg-neutral-800 transition-colors"
+                          className="flex items-center gap-2 px-3 py-1.5 rounded-md text-xs hover:bg-gray-100 dark:hover:bg-neutral-800 focus:bg-gray-100 dark:focus:bg-neutral-800 transition-colors"
                         >
                           {item.icon ? item.icon : null}
                           <span>{item.title}</span>
