@@ -112,7 +112,7 @@ export function AppSidebar() {
 
                 {/* SUBITEMS */}
                 <CollapsibleContent>
-                  <SidebarMenuSub className="border-b rounded-l rounded-2xl">
+                  <SidebarMenuSub className="border-b rounded-l rounded-lg">
                     {section.items.map((item) => (
                       <SidebarMenuSubItem key={item.title}>
                         <Link
