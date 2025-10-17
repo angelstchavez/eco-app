@@ -119,7 +119,6 @@ export function AppSidebar() {
                           href={item.url}
                           className="flex items-center gap-2 px-3 py-1.5 rounded-md text-xs hover:bg-gray-100 dark:hover:bg-neutral-800 focus:bg-gray-100 dark:focus:bg-neutral-800 transition-colors"
                         >
-                          {item.icon ? item.icon : null}
                           <span>{item.title}</span>
                         </Link>
                       </SidebarMenuSubItem>
