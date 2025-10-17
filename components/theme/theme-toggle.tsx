@@ -40,7 +40,7 @@ export function ThemeToggle() {
       size="icon"
       title="Cambiar tema"
       aria-label="Cambiar tema"
-      className="cursor-pointer transition-transform hover:scale-110 active:scale-95"
+      className="size-7 cursor-pointer transition-transform hover:scale-110 active:scale-95"
     >
       {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
     </Button>
